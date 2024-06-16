@@ -46,14 +46,72 @@ Upon first launch, you might see a welcome screen with options to customize your
 ## In My Case am Using linux Ubuntu Version
 ### Steps for installing vs code in ubuntu
 ### Installing VScode using Snap
+1. Open terminal
 #### Run this commands
-1. sudo snap install --classic code
+2. sudo snap install --classic code
 in My case I already have Visual studio Installed 
-![alt text](image.png)
+![alt text](image-1.png)
+
+### Installing VS Code using APT
+1. Open terminal 
+2. Install dependencies using this commands 
+a. sudo apt update
+b. sudo apt install software-properties-common apt-transport-https wget
+3. Import the microsoft GPG key
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-archive-keyring.gpg > /dev/null
+4. Enable the Visual Studio Code Repository:
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+
+5. Update the Package List:
+sudo apt update
+6. install Visual studio code 
+sudo apt install code
+7. launch visual studio code 
+code 
 
 2. First-time Setup:
    - After installing VS Code, what initial configurations and settings should be adjusted for an optimal coding environment? Mention any important settings or extensions.
+## Theme and Appearance
+### Choose a Theme:
+Go to File > Preferences > Color Theme or press Ctrl+K Ctrl+T and select a theme that suits your preference. Popular choices include "Dark+ (default dark)" and "Light+ (default light)."
+## Settings Sync
+### Enable Settings Sync:
+Go to File > Preferences > Settings Sync and sign in with your GitHub or Microsoft account. This syncs your settings, extensions, and themes across multiple devices.
+## Essential Extensions
+Install Recommended Extensions:,
+Python: For Python development.,
+ESLint: For JavaScript and TypeScript linting.,
+Prettier: Code formatter for consistent style.,
+GitLens: Enhances Git capabilities within VS Code.,
+Debugger for Chrome: Debugging JavaScript code in Chrome.
 
+## Editor Settings 
+### Adjust Editor Settings:
+Go to File > Preferences > Settings or press Ctrl+, and adjust the following settings for a better coding experience:
+#### Font Size: Adjust for readability.
+"editor.fontSize": 14
+#### Tab Size: Set to your preference, often 2 or 4 spaces.
+"editor.tabSize": 2
+#### Auto Save: Enable auto-saving of files.
+"files.autoSave": "afterDelay",
+"files.autoSaveDelay": 1000
+#### Word Wrap: Enable word wrapping for long lines.
+"editor.wordWrap": "on"
+#### Linting and Formatting on Save: Enable ESLint and Prettier to run on file save.
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+},
+"editor.formatOnSave": true
+## Terminal Configuration
+### Integrated Terminal:
+Open the integrated terminal with Ctrl+` .
+Configure the default shell to your preference (bash, zsh, PowerShell, etc.):
+"terminal.integrated.shell.linux": "/bin/bash"
+## Version Control
+### Git Configuration:
+configure Git with your user information., 
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 3. User Interface Overview:
    - Explain the main components of the VS Code user interface. Identify and describe the purpose of the Activity Bar, Side Bar, Editor Group, and Status Bar.
 
