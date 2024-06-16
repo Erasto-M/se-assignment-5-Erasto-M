@@ -371,3 +371,11 @@ or run this commands in the terminal
 
 4. confirm your local repository has been pushed
 ![alt text](image-41.png)
+
+## References
+- Microsoft. (n.d.). Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs
+- Microsoft. (n.d.). Git integration. Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs/editor/versioncontrol
+- Microsoft. (n.d.). Debugging. Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs/editor/debugging
+- Microsoft. (n.d.). Integrated terminal. Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs/editor/integrated-terminal
+- Microsoft. (n.d.). Settings. Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs/getstarted/settings
+- Microsoft. (n.d.). File and folder management. Visual Studio Code documentation. Retrieved June 16, 2024, from https://code.visualstudio.com/docs/editor/codebasics
