@@ -43,7 +43,13 @@ Click "Finish" to exit the Setup Wizard.
 If you checked the "Launch Visual Studio Code" box, VS Code will open automatically. Otherwise, you can open it from the Start menu or the desktop shortcut if you created one.
 Upon first launch, you might see a welcome screen with options to customize your setup, install extensions, and learn more about VS Code. You can explore these options or close the welcome screen to start using the editor.
 
-   ## In My Case am Using linux Ubuntu Version
+## In My Case am Using linux Ubuntu Version
+### Steps for installing vs code in ubuntu
+### Installing VScode using Snap
+#### Run this commands
+1. sudo snap install --classic code
+in My case I already have Visual studio Installed 
+![alt text](image.png)
 
 2. First-time Setup:
    - After installing VS Code, what initial configurations and settings should be adjusted for an optimal coding environment? Mention any important settings or extensions.
